@@ -20,6 +20,7 @@ HOW TO RUN:
   Visit my itch.io page and download the game files by following the instructions there:
   https://mono19189.itch.io/after-the-threshold
   
+  <img width="1621" height="810" alt="image" src="https://github.com/user-attachments/assets/181a9f1a-b44d-4093-9050-b9fb6accca8a" />
   <img width="1621" height="810" alt="image" src="https://github.com/user-attachments/assets/d492a693-2431-4782-9f42-79fc667537aa" />
   <img width="1621" height="810" alt="image" src="https://github.com/user-attachments/assets/8267763f-9063-4bd0-ba07-1f4f034209cd" />
   <img width="1621" height="810" alt="image" src="https://github.com/user-attachments/assets/72a563fe-f727-42cc-80c9-de4a0c287edc" />
