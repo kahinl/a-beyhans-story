@@ -1,0 +1,29 @@
+extends Node
+
+var interaction_locked = false
+var speech1_played = false
+var flashpicked = false
+var flashlight_on = false
+var floor2Key_picked = false
+var letter1_picked = false
+var letter2_picked = false
+var Cassette_picked = false
+var casset_putted = false
+var boxKey_picked = false
+var hospitalKey_picked =false
+var correct_code = false
+var accessCard_picked = false
+var fullAccess = false
+var doorHandel_picked = false
+var is_handel_installed = false
+var frontKey_picked = false 
+var room1js_entered = 0
+var bathjs_entered = 0
+var phone_scene_visits = 0
+var phone_picked = false
+var kitchen_entered = 0 
+var Reset2 = false
+var final_truth_interacted: bool = false
+var pistol_picked = false
+var can_pick_pistol = false
+var monster_encounters: int = 0
