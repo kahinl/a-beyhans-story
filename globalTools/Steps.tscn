@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b475i8i3iuv7d"]
+
+[ext_resource type="AudioStream" uid="uid://dw4up6gk7oyew" path="res://Sounds/spinopel-creaky-floorboards-281297.mp3" id="1_wood"]
+
+[node name="Steps" type="Node"]
+
+[node name="wood_footsteps" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_wood")
+volume_db = -10.0
