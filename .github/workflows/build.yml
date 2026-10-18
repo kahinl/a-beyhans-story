@@ -32,3 +32,30 @@ jobs:
         with:
           name: windows-build
           path: build/
+
+  android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Godot
+        uses: chickensoft-games/setup-godot@v2
+        with:
+          version: 4.7.2-stable
+          include-templates: true
+
+      - name: Debug keystore
+        run: keytool -genkeypair -keystore debug.keystore -alias androiddebugkey -storepass android -keypass android -dname "CN=Android Debug,O=Android,C=US"
+
+      - name: Import project
+        run: godot --headless --import || true
+
+      - name: Export Android APK
+        run: |
+          mkdir -p build
+          godot --headless --export-debug "Android" build/A-Beyhans-story.apk
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: android-build
+          path: build/
