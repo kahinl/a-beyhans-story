@@ -45,7 +45,7 @@ jobs:
           include-templates: true
 
       - name: Debug keystore
-        run: keytool -genkeypair -keystore debug.keystore -alias androiddebugkey -storepass android -keypass android -dname "CN=Android Debug,O=Android,C=US"
+        run: keytool -genkeypair -keyalg RSA -keysize 2048 -validity 10000 -keystore debug.keystore -alias androiddebugkey -storepass android -keypass android -dname "CN=Android Debug,O=Android,C=US"
 
       - name: Import project
         run: godot --headless --import || true
