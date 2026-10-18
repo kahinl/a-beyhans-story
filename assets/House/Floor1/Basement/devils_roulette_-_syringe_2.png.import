@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cx5s2o5ycaxvm"
-path.s3tc="res://.godot/imported/devils_roulette_-_syringe_2.png-5c251c9397ebcefdd28cbbf604ec1056.s3tc.ctex"
+path.etc2="res://.godot/imported/devils_roulette_-_syringe_2.png-5c251c9397ebcefdd28cbbf604ec1056.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/Basement/devils_roulette_-_syringe_2.png"
-dest_files=["res://.godot/imported/devils_roulette_-_syringe_2.png-5c251c9397ebcefdd28cbbf604ec1056.s3tc.ctex"]
+dest_files=["res://.godot/imported/devils_roulette_-_syringe_2.png-5c251c9397ebcefdd28cbbf604ec1056.etc2.ctex"]
 
 [params]
 

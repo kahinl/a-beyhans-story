@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4f8b1b3fwy78"
-path.s3tc="res://.godot/imported/realistic_kitchen_scene_37.jpg-880490e7ac0f9a6b2f79d3f8dd18f561.s3tc.ctex"
+path.etc2="res://.godot/imported/realistic_kitchen_scene_37.jpg-880490e7ac0f9a6b2f79d3f8dd18f561.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/Dream/realistic_kitchen_scene_37.jpg"
-dest_files=["res://.godot/imported/realistic_kitchen_scene_37.jpg-880490e7ac0f9a6b2f79d3f8dd18f561.s3tc.ctex"]
+dest_files=["res://.godot/imported/realistic_kitchen_scene_37.jpg-880490e7ac0f9a6b2f79d3f8dd18f561.etc2.ctex"]
 
 [params]
 

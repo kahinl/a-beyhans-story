@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcvsyawhjm0oi"
-path.s3tc="res://.godot/imported/large_framed_picture_wood_1.png-a3573e5911d2c00669f555102abff6ff.s3tc.ctex"
+path.etc2="res://.godot/imported/large_framed_picture_wood_1.png-a3573e5911d2c00669f555102abff6ff.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor2/Bedrooms/room1/large_framed_picture_wood_1.png"
-dest_files=["res://.godot/imported/large_framed_picture_wood_1.png-a3573e5911d2c00669f555102abff6ff.s3tc.ctex"]
+dest_files=["res://.godot/imported/large_framed_picture_wood_1.png-a3573e5911d2c00669f555102abff6ff.etc2.ctex"]
 
 [params]
 

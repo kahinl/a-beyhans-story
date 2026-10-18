@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tpg8shav28u6"
-path.s3tc="res://.godot/imported/cassette_player_7.png-e68888825a65b17cf19f39ee2d11525c.s3tc.ctex"
+path.etc2="res://.godot/imported/cassette_player_7.png-e68888825a65b17cf19f39ee2d11525c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/Basement/cassette_player_7.png"
-dest_files=["res://.godot/imported/cassette_player_7.png-e68888825a65b17cf19f39ee2d11525c.s3tc.ctex"]
+dest_files=["res://.godot/imported/cassette_player_7.png-e68888825a65b17cf19f39ee2d11525c.etc2.ctex"]
 
 [params]
 

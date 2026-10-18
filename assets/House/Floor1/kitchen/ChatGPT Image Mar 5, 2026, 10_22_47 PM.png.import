@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6cwpgpe7jt62"
-path.s3tc="res://.godot/imported/ChatGPT Image Mar 5, 2026, 10_22_47 PM.png-91da729b4b956d98192abe360a01b221.s3tc.ctex"
+path.etc2="res://.godot/imported/ChatGPT Image Mar 5, 2026, 10_22_47 PM.png-91da729b4b956d98192abe360a01b221.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/House/Floor1/kitchen/ChatGPT Image Mar 5, 2026, 10_22_47 PM.png"
-dest_files=["res://.godot/imported/ChatGPT Image Mar 5, 2026, 10_22_47 PM.png-91da729b4b956d98192abe360a01b221.s3tc.ctex"]
+dest_files=["res://.godot/imported/ChatGPT Image Mar 5, 2026, 10_22_47 PM.png-91da729b4b956d98192abe360a01b221.etc2.ctex"]
 
 [params]
 

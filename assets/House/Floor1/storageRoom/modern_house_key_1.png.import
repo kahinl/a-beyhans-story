@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://epdx74fejog5"
-path.s3tc="res://.godot/imported/modern_house_key_1.png-209b419e1b7f9a8903ecba83441c57ce.s3tc.ctex"
+path.etc2="res://.godot/imported/modern_house_key_1.png-209b419e1b7f9a8903ecba83441c57ce.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/storageRoom/modern_house_key_1.png"
-dest_files=["res://.godot/imported/modern_house_key_1.png-209b419e1b7f9a8903ecba83441c57ce.s3tc.ctex"]
+dest_files=["res://.godot/imported/modern_house_key_1.png-209b419e1b7f9a8903ecba83441c57ce.etc2.ctex"]
 
 [params]
 

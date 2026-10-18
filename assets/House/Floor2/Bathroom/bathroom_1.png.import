@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bb2cq1nhkpvub"
-path.s3tc="res://.godot/imported/bathroom_1.png-010e49c713a6a864d2375c445a65d495.s3tc.ctex"
+path.etc2="res://.godot/imported/bathroom_1.png-010e49c713a6a864d2375c445a65d495.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor2/Bathroom/bathroom_1.png"
-dest_files=["res://.godot/imported/bathroom_1.png-010e49c713a6a864d2375c445a65d495.s3tc.ctex"]
+dest_files=["res://.godot/imported/bathroom_1.png-010e49c713a6a864d2375c445a65d495.etc2.ctex"]
 
 [params]
 

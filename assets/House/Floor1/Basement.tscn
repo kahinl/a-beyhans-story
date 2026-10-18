@@ -99,6 +99,7 @@
 [ext_resource type="Shader" uid="uid://d2ogpqmsxa43u" path="res://assets/House/Floor1/Basement.gdshader" id="98_wqfl6"]
 [ext_resource type="AudioStream" uid="uid://c320ttm58yp1b" path="res://assets/House/Floor1/Basement/universfield-heavy-walking-footsteps-352771.mp3" id="99_ohm62"]
 [ext_resource type="FontFile" uid="uid://ctdeq4pgv74ma" path="res://assets/main/extreme_glitch/Extreme Glitch.otf" id="100_ta5fp"]
+[ext_resource type="Script" path="res://Scripts/inspect_item.gd" id="900_new0"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wi1em"]
 resource_name = "shelf_metal"
@@ -11217,6 +11218,25 @@ shader = ExtResource("98_wqfl6")
 shader_parameter/dizziness_strength = 1.0
 shader_parameter/wave_speed = 1.5
 
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ph_flat"]
+size = Vector3(0.55, 0.42, 0.06)
+[sub_resource type="BoxMesh" id="BoxMesh_ph_flat"]
+size = Vector3(0.55, 0.42, 0.06)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ph_flat"]
+albedo_color = Color(0.78, 0.8, 0.72, 1)
+emission_enabled = true
+emission = Color(0.78, 0.8, 0.72, 1)
+emission_energy_multiplier = 0.7
+[sub_resource type="BoxShape3D" id="BoxShape3D_ph_small"]
+size = Vector3(0.3, 0.3, 0.3)
+[sub_resource type="BoxMesh" id="BoxMesh_ph_small"]
+size = Vector3(0.3, 0.3, 0.3)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ph_small"]
+albedo_color = Color(0.86, 0.72, 0.34, 1)
+emission_enabled = true
+emission = Color(0.86, 0.72, 0.34, 1)
+emission_energy_multiplier = 0.7
 [node name="Node3D" type="Node3D" unique_id=666579747]
 script = ExtResource("1_mmyhu")
 
@@ -13196,6 +13216,130 @@ theme_override_fonts/font = ExtResource("100_ta5fp")
 theme_override_font_sizes/font_size = 220
 text = "YOU DIED!"
 
+
+[node name="extraSpeech" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="line" type="Label" parent="extraSpeech"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 454.0
+offset_top = 786.0
+offset_right = 1454.0
+offset_bottom = 900.0
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="wallWriting" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.29, 1.4, 4.13)
+script = ExtResource("900_new0")
+flag_name = "monster_word_seen"
+speech_key = "monster_word"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wallWriting"]
+shape = SubResource("BoxShape3D_ph_flat")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="wallWriting"]
+mesh = SubResource("BoxMesh_ph_flat")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_flat")
+
+[node name="play1" type="CanvasLayer" parent="wallWriting"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="wallWriting/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("70_mphct")
+
+[node name="baseChains" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6, 0.5, 1.2)
+script = ExtResource("900_new0")
+flag_name = "base_chains_seen"
+speech_key = "base_6"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="baseChains"]
+shape = SubResource("BoxShape3D_ph_small")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="baseChains"]
+mesh = SubResource("BoxMesh_ph_small")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_small")
+
+[node name="play1" type="CanvasLayer" parent="baseChains"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="baseChains/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("70_mphct")
+
+[node name="baseBed" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0.5, 2.4)
+script = ExtResource("900_new0")
+flag_name = "base_bed_seen"
+speech_key = "base_7"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="baseBed"]
+shape = SubResource("BoxShape3D_ph_small")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="baseBed"]
+mesh = SubResource("BoxMesh_ph_small")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_small")
+
+[node name="play1" type="CanvasLayer" parent="baseBed"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="baseBed/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("70_mphct")
+
+[node name="baseBox" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, 0.4, 2.4)
+script = ExtResource("900_new0")
+flag_name = "box_seen"
+speech_key = "base_box"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="baseBox"]
+shape = SubResource("BoxShape3D_ph_small")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="baseBox"]
+mesh = SubResource("BoxMesh_ph_small")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_small")
+
+[node name="play1" type="CanvasLayer" parent="baseBox"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="baseBox/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("70_mphct")
+
+[node name="baseApology" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.83, 0.9, 1.0)
+script = ExtResource("900_new0")
+flag_name = "basement_props_seen"
+speech_key = "base_5"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="baseApology"]
+shape = SubResource("BoxShape3D_ph_small")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="baseApology"]
+mesh = SubResource("BoxMesh_ph_small")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_small")
+
+[node name="play1" type="CanvasLayer" parent="baseApology"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="baseApology/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("70_mphct")
 [connection signal="body_entered" from="Path3D/PathFollow3D/Monser/Area3D" to="Path3D/PathFollow3D/Monser" method="_on_area_3d_body_entered"]
 
 [editable path="Basement/Boxes"]

@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hranmqetjbwe"
-path.s3tc="res://.godot/imported/key_vcu_3d_4677_0.jpg-7b1a93c1677a2a115a189609c257afe2.s3tc.ctex"
+path.etc2="res://.godot/imported/key_vcu_3d_4677_0.jpg-7b1a93c1677a2a115a189609c257afe2.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor2/Bedrooms/room1/key_vcu_3d_4677_0.jpg"
-dest_files=["res://.godot/imported/key_vcu_3d_4677_0.jpg-7b1a93c1677a2a115a189609c257afe2.s3tc.ctex"]
+dest_files=["res://.godot/imported/key_vcu_3d_4677_0.jpg-7b1a93c1677a2a115a189609c257afe2.etc2.ctex"]
 
 [params]
 

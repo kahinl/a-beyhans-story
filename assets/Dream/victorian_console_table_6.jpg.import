@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dxwkxwn8rjrxt"
-path.s3tc="res://.godot/imported/victorian_console_table_6.jpg-d53054b2a6a507416636230274402507.s3tc.ctex"
+path.etc2="res://.godot/imported/victorian_console_table_6.jpg-d53054b2a6a507416636230274402507.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/Dream/victorian_console_table_6.jpg"
-dest_files=["res://.godot/imported/victorian_console_table_6.jpg-d53054b2a6a507416636230274402507.s3tc.ctex"]
+dest_files=["res://.godot/imported/victorian_console_table_6.jpg-d53054b2a6a507416636230274402507.etc2.ctex"]
 
 [params]
 

@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqph86cd78d64"
-path.s3tc="res://.godot/imported/rusty_radiator_0.png-e2f9b9c7925a7ea0dd74698fd5512c89.s3tc.ctex"
+path.etc2="res://.godot/imported/rusty_radiator_0.png-e2f9b9c7925a7ea0dd74698fd5512c89.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor2/Bedrooms/room2/rusty_radiator_0.png"
-dest_files=["res://.godot/imported/rusty_radiator_0.png-e2f9b9c7925a7ea0dd74698fd5512c89.s3tc.ctex"]
+dest_files=["res://.godot/imported/rusty_radiator_0.png-e2f9b9c7925a7ea0dd74698fd5512c89.etc2.ctex"]
 
 [params]
 

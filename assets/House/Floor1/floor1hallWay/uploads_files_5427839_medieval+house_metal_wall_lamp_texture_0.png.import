@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4v4ui5nl8q8a"
-path.s3tc="res://.godot/imported/uploads_files_5427839_medieval+house_metal_wall_lamp_texture_0.png-27b2b975109111bf0e44e079abaf64cd.s3tc.ctex"
+path.etc2="res://.godot/imported/uploads_files_5427839_medieval+house_metal_wall_lamp_texture_0.png-27b2b975109111bf0e44e079abaf64cd.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/floor1hallWay/uploads_files_5427839_medieval+house_metal_wall_lamp_texture_0.png"
-dest_files=["res://.godot/imported/uploads_files_5427839_medieval+house_metal_wall_lamp_texture_0.png-27b2b975109111bf0e44e079abaf64cd.s3tc.ctex"]
+dest_files=["res://.godot/imported/uploads_files_5427839_medieval+house_metal_wall_lamp_texture_0.png-27b2b975109111bf0e44e079abaf64cd.etc2.ctex"]
 
 [params]
 

@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://divcyxfux12xj"
-path.s3tc="res://.godot/imported/carcass_1.png-85ab5229c60aeffcda5d7d7d5d28bd4c.s3tc.ctex"
+path.etc2="res://.godot/imported/carcass_1.png-85ab5229c60aeffcda5d7d7d5d28bd4c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor2/Library/carcass_1.png"
-dest_files=["res://.godot/imported/carcass_1.png-85ab5229c60aeffcda5d7d7d5d28bd4c.s3tc.ctex"]
+dest_files=["res://.godot/imported/carcass_1.png-85ab5229c60aeffcda5d7d7d5d28bd4c.etc2.ctex"]
 
 [params]
 

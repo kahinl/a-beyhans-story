@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0umn11hl6nba"
-path.s3tc="res://.godot/imported/psx_dead_tree_pack_1.jpg-82e82d375b8ad7eb81b1b840e77920c6.s3tc.ctex"
+path.etc2="res://.godot/imported/psx_dead_tree_pack_1.jpg-82e82d375b8ad7eb81b1b840e77920c6.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/trees/psx_dead_tree_pack_1.jpg"
-dest_files=["res://.godot/imported/psx_dead_tree_pack_1.jpg-82e82d375b8ad7eb81b1b840e77920c6.s3tc.ctex"]
+dest_files=["res://.godot/imported/psx_dead_tree_pack_1.jpg-82e82d375b8ad7eb81b1b840e77920c6.etc2.ctex"]
 
 [params]
 

@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dakp3b6yfitar"
-path.s3tc="res://.godot/imported/uploads_files_5427839_medieval+house_victorian_curtains_texture_1.png-b0e01b3180cbc34dcff0ccdf897ae09c.s3tc.ctex"
+path.etc2="res://.godot/imported/uploads_files_5427839_medieval+house_victorian_curtains_texture_1.png-b0e01b3180cbc34dcff0ccdf897ae09c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/floor1hallWay/uploads_files_5427839_medieval+house_victorian_curtains_texture_1.png"
-dest_files=["res://.godot/imported/uploads_files_5427839_medieval+house_victorian_curtains_texture_1.png-b0e01b3180cbc34dcff0ccdf897ae09c.s3tc.ctex"]
+dest_files=["res://.godot/imported/uploads_files_5427839_medieval+house_victorian_curtains_texture_1.png-b0e01b3180cbc34dcff0ccdf897ae09c.etc2.ctex"]
 
 [params]
 

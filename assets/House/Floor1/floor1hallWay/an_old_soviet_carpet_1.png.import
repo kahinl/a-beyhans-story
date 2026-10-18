@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctvnvro70mp72"
-path.s3tc="res://.godot/imported/an_old_soviet_carpet_1.png-b89d468fe268df38d0913157cf22352d.s3tc.ctex"
+path.etc2="res://.godot/imported/an_old_soviet_carpet_1.png-b89d468fe268df38d0913157cf22352d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/floor1hallWay/an_old_soviet_carpet_1.png"
-dest_files=["res://.godot/imported/an_old_soviet_carpet_1.png-b89d468fe268df38d0913157cf22352d.s3tc.ctex"]
+dest_files=["res://.godot/imported/an_old_soviet_carpet_1.png-b89d468fe268df38d0913157cf22352d.etc2.ctex"]
 
 [params]
 

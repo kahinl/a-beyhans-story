@@ -25,11 +25,12 @@ func interact():
 	
 	await get_tree().create_timer(2.20).timeout
 	pistolPick.pause()
-	
-	
-	
-	
-	
+
+	# Ucuncu semptom: ilac alininca eller ilk kez sakinlesiyor (G12)
+	if not GameState.symptom3_done:
+		GameState.symptom3_done = true
+		Speech.say(get_node_or_null("../extraSpeech/line") as Label, "symptom_3")
+
 	queue_free()
 
 func show_prompt():

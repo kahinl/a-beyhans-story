@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://deg3aoi6n7fgy"
-path.s3tc="res://.godot/imported/old_retro_tv_2k_5.png-8b61b71d06d5786218c119b8a1262f6c.s3tc.ctex"
+path.etc2="res://.godot/imported/old_retro_tv_2k_5.png-8b61b71d06d5786218c119b8a1262f6c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor2/Bedrooms/room3/old_retro_tv_2k_5.png"
-dest_files=["res://.godot/imported/old_retro_tv_2k_5.png-8b61b71d06d5786218c119b8a1262f6c.s3tc.ctex"]
+dest_files=["res://.godot/imported/old_retro_tv_2k_5.png-8b61b71d06d5786218c119b8a1262f6c.etc2.ctex"]
 
 [params]
 

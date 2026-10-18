@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0jkn3l1seq8y"
-path.s3tc="res://.godot/imported/fully_reanimated_scp-096_updated_0.jpg-07736c4202817849fa391ea8e2b3e435.s3tc.ctex"
+path.etc2="res://.godot/imported/fully_reanimated_scp-096_updated_0.jpg-07736c4202817849fa391ea8e2b3e435.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/Basement/fully_reanimated_scp-096_updated_0.jpg"
-dest_files=["res://.godot/imported/fully_reanimated_scp-096_updated_0.jpg-07736c4202817849fa391ea8e2b3e435.s3tc.ctex"]
+dest_files=["res://.godot/imported/fully_reanimated_scp-096_updated_0.jpg-07736c4202817849fa391ea8e2b3e435.etc2.ctex"]
 
 [params]
 

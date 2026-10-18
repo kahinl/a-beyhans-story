@@ -11,10 +11,12 @@ func _ready():
 func interact():
 	if GameState.interaction_locked: return
 	GameState.frontKey_picked = true
-	queue_free()
+	visible = false
+	collision_layer = 0
 	speech.play("s2")
 	await speech.animation_finished
 	speech.stop()
+	queue_free()
 	
 func show_prompt():
 	prompt_play.visible = true

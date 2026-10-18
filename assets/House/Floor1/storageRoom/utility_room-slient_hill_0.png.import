@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5cu462t8hx0k"
-path.s3tc="res://.godot/imported/utility_room-slient_hill_0.png-0f4ba5861addf03c17ab03974e9ddae1.s3tc.ctex"
+path.etc2="res://.godot/imported/utility_room-slient_hill_0.png-0f4ba5861addf03c17ab03974e9ddae1.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/storageRoom/utility_room-slient_hill_0.png"
-dest_files=["res://.godot/imported/utility_room-slient_hill_0.png-0f4ba5861addf03c17ab03974e9ddae1.s3tc.ctex"]
+dest_files=["res://.godot/imported/utility_room-slient_hill_0.png-0f4ba5861addf03c17ab03974e9ddae1.etc2.ctex"]
 
 [params]
 

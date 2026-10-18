@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b27uftolu5pgo"
-path.s3tc="res://.godot/imported/uploads_files_5427839_medieval+house_Shkaf_mtl_BaseColor.png-f4257ed72a91da873f9e98b8e7f72792.s3tc.ctex"
+path.etc2="res://.godot/imported/uploads_files_5427839_medieval+house_Shkaf_mtl_BaseColor.png-f4257ed72a91da873f9e98b8e7f72792.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/floor1hallWay/uploads_files_5427839_medieval+house_Shkaf_mtl_BaseColor.png"
-dest_files=["res://.godot/imported/uploads_files_5427839_medieval+house_Shkaf_mtl_BaseColor.png-f4257ed72a91da873f9e98b8e7f72792.s3tc.ctex"]
+dest_files=["res://.godot/imported/uploads_files_5427839_medieval+house_Shkaf_mtl_BaseColor.png-f4257ed72a91da873f9e98b8e7f72792.etc2.ctex"]
 
 [params]
 

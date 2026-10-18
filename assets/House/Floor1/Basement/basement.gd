@@ -50,6 +50,11 @@ func _ready() -> void:
 			player.unfreeze()
 				
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+
+		# Ilk berrak ruya ani (G11)
+		if not GameState.lucid1_done:
+			GameState.lucid1_done = true
+			Speech.say(get_node_or_null("extraSpeech/line") as Label, "lucid_1")
 	else:
 		black.play("fade_out")
 		

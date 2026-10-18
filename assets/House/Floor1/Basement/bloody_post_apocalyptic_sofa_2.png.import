@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4mkdp8duujdt"
-path.s3tc="res://.godot/imported/bloody_post_apocalyptic_sofa_2.png-17654f44fef518c25c89004611e98427.s3tc.ctex"
+path.etc2="res://.godot/imported/bloody_post_apocalyptic_sofa_2.png-17654f44fef518c25c89004611e98427.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/Basement/bloody_post_apocalyptic_sofa_2.png"
-dest_files=["res://.godot/imported/bloody_post_apocalyptic_sofa_2.png-17654f44fef518c25c89004611e98427.s3tc.ctex"]
+dest_files=["res://.godot/imported/bloody_post_apocalyptic_sofa_2.png-17654f44fef518c25c89004611e98427.etc2.ctex"]
 
 [params]
 

@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c63j4v35g6qsy"
-path.s3tc="res://.godot/imported/door__wodeen_old__brown_0.png-09bfa42ff15bb9dabc8cd532a914bf69.s3tc.ctex"
+path.etc2="res://.godot/imported/door__wodeen_old__brown_0.png-09bfa42ff15bb9dabc8cd532a914bf69.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/floor1hallWay/door__wodeen_old__brown_0.png"
-dest_files=["res://.godot/imported/door__wodeen_old__brown_0.png-09bfa42ff15bb9dabc8cd532a914bf69.s3tc.ctex"]
+dest_files=["res://.godot/imported/door__wodeen_old__brown_0.png-09bfa42ff15bb9dabc8cd532a914bf69.etc2.ctex"]
 
 [params]
 

@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgan7mu6iircg"
-path.s3tc="res://.godot/imported/buisness_man_with_talking_animation_16.png-b169a2c60588efc24cb255034405f64e.s3tc.ctex"
+path.etc2="res://.godot/imported/buisness_man_with_talking_animation_16.png-b169a2c60588efc24cb255034405f64e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/Dream/buisness_man_with_talking_animation_16.png"
-dest_files=["res://.godot/imported/buisness_man_with_talking_animation_16.png-b169a2c60588efc24cb255034405f64e.s3tc.ctex"]
+dest_files=["res://.godot/imported/buisness_man_with_talking_animation_16.png-b169a2c60588efc24cb255034405f64e.etc2.ctex"]
 
 [params]
 

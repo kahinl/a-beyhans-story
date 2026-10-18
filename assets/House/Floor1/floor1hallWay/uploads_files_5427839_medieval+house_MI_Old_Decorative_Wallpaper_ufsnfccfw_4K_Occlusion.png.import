@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://eby5m3nf1p8v"
-path.s3tc="res://.godot/imported/uploads_files_5427839_medieval+house_MI_Old_Decorative_Wallpaper_ufsnfccfw_4K_Occlusion.png-d2412faf3daf7acef1a4f01fbe97a38d.s3tc.ctex"
+path.etc2="res://.godot/imported/uploads_files_5427839_medieval+house_MI_Old_Decorative_Wallpaper_ufsnfccfw_4K_Occlusion.png-d2412faf3daf7acef1a4f01fbe97a38d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/floor1hallWay/uploads_files_5427839_medieval+house_MI_Old_Decorative_Wallpaper_ufsnfccfw_4K_Occlusion.png"
-dest_files=["res://.godot/imported/uploads_files_5427839_medieval+house_MI_Old_Decorative_Wallpaper_ufsnfccfw_4K_Occlusion.png-d2412faf3daf7acef1a4f01fbe97a38d.s3tc.ctex"]
+dest_files=["res://.godot/imported/uploads_files_5427839_medieval+house_MI_Old_Decorative_Wallpaper_ufsnfccfw_4K_Occlusion.png-d2412faf3daf7acef1a4f01fbe97a38d.etc2.ctex"]
 
 [params]
 

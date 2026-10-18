@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bi07ryqtcqiup"
-path.s3tc="res://.godot/imported/motorbike_key_1.png-db78dc1bc4181780c4d56406de33588b.s3tc.ctex"
+path.etc2="res://.godot/imported/motorbike_key_1.png-db78dc1bc4181780c4d56406de33588b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor2/Bathroom/motorbike_key_1.png"
-dest_files=["res://.godot/imported/motorbike_key_1.png-db78dc1bc4181780c4d56406de33588b.s3tc.ctex"]
+dest_files=["res://.godot/imported/motorbike_key_1.png-db78dc1bc4181780c4d56406de33588b.etc2.ctex"]
 
 [params]
 

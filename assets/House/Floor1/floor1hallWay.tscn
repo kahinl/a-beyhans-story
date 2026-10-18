@@ -91,6 +91,8 @@
 [ext_resource type="AudioStream" uid="uid://bsnw7a4qj3hek" path="res://assets/House/Floor1/floor1hallWay/freesound_community-sp-0800-pitch-shift-sounds-good-at-c7-96062.mp3" id="89_cqp8e"]
 [ext_resource type="Texture2D" uid="uid://bvc7xejq4hr7b" path="res://assets/House/Floor1/floor1hallWay/wood_ceiling_0.png" id="90_07j0d"]
 [ext_resource type="Texture2D" uid="uid://dop4ta54uf2e6" path="res://assets/House/Floor1/floor1hallWay/wood_ceiling_1.png" id="91_ul6e3"]
+[ext_resource type="Script" path="res://Scripts/inspect_item.gd" id="900_new0"]
+[ext_resource type="Script" path="res://Scripts/DOORS/frontDoor.gd" id="901_new1"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_wr3l3"]
 
@@ -7791,6 +7793,18 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_4blgb")
 
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ph_flat"]
+size = Vector3(0.55, 0.42, 0.06)
+[sub_resource type="BoxMesh" id="BoxMesh_ph_flat"]
+size = Vector3(0.55, 0.42, 0.06)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ph_flat"]
+albedo_color = Color(0.78, 0.8, 0.72, 1)
+emission_enabled = true
+emission = Color(0.78, 0.8, 0.72, 1)
+emission_energy_multiplier = 0.7
+[sub_resource type="BoxShape3D" id="BoxShape3D_ph_door"]
+size = Vector3(1.0, 2.0, 0.15)
 [node name="Node3D" type="Node3D" unique_id=1470722283]
 script = ExtResource("1_mao1q")
 
@@ -8914,6 +8928,58 @@ mesh = SubResource("ArrayMesh_dmds8")
 transform = Transform3D(-2.9995158, -0.05264177, 0.005781308, 0.052769504, -2.999344, 0.016958766, 0.010964928, 0.034115445, 1.499893, 4.0268917, -5.8602924, 3.4126687)
 mesh = SubResource("ArrayMesh_cg6bo")
 
+
+[node name="extraSpeech" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="line" type="Label" parent="extraSpeech"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 454.0
+offset_top = 786.0
+offset_right = 1454.0
+offset_bottom = 900.0
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="emptyFrame" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.91, 1.9, -2.2)
+script = ExtResource("900_new0")
+flag_name = "hallway_frame_seen"
+speech_key = "hallway_frame"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="emptyFrame"]
+shape = SubResource("BoxShape3D_ph_flat")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="emptyFrame"]
+mesh = SubResource("BoxMesh_ph_flat")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_flat")
+
+[node name="play1" type="CanvasLayer" parent="emptyFrame"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="emptyFrame/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("73_fg5eq")
+
+[node name="frontDoorExit" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.72, 1.2, -5.84)
+script = ExtResource("901_new1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="frontDoorExit"]
+shape = SubResource("BoxShape3D_ph_door")
+
+[node name="play1" type="CanvasLayer" parent="frontDoorExit"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="frontDoorExit/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("73_fg5eq")
 [connection signal="body_entered" from="monster/Area3D" to="monster/Area3D" method="_on_body_entered"]
 [connection signal="body_exited" from="monster/Area3D" to="monster/Area3D" method="_on_body_exited"]
 

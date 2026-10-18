@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5x7xnbspkuor"
-path.s3tc="res://.godot/imported/access_lock_system_card__pin_1.png-57d7941417b49be9045b5c66ec6cbc29.s3tc.ctex"
+path.etc2="res://.godot/imported/access_lock_system_card__pin_1.png-57d7941417b49be9045b5c66ec6cbc29.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/kitchen/access_lock_system_card__pin_1.png"
-dest_files=["res://.godot/imported/access_lock_system_card__pin_1.png-57d7941417b49be9045b5c66ec6cbc29.s3tc.ctex"]
+dest_files=["res://.godot/imported/access_lock_system_card__pin_1.png-57d7941417b49be9045b5c66ec6cbc29.etc2.ctex"]
 
 [params]
 

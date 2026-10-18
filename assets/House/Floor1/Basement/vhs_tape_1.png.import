@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://sdf45s5fbfro"
-path.s3tc="res://.godot/imported/vhs_tape_1.png-0e7adac20fa6a3a725788d0b9214f407.s3tc.ctex"
+path.etc2="res://.godot/imported/vhs_tape_1.png-0e7adac20fa6a3a725788d0b9214f407.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/Basement/vhs_tape_1.png"
-dest_files=["res://.godot/imported/vhs_tape_1.png-0e7adac20fa6a3a725788d0b9214f407.s3tc.ctex"]
+dest_files=["res://.godot/imported/vhs_tape_1.png-0e7adac20fa6a3a725788d0b9214f407.etc2.ctex"]
 
 [params]
 

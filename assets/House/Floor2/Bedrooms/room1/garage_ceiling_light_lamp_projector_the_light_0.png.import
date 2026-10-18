@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dcnhgy61voqxd"
-path.s3tc="res://.godot/imported/garage_ceiling_light_lamp_projector_the_light_0.png-7a663639f0a290643a43d73344aa6075.s3tc.ctex"
+path.etc2="res://.godot/imported/garage_ceiling_light_lamp_projector_the_light_0.png-7a663639f0a290643a43d73344aa6075.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor2/Bedrooms/room1/garage_ceiling_light_lamp_projector_the_light_0.png"
-dest_files=["res://.godot/imported/garage_ceiling_light_lamp_projector_the_light_0.png-7a663639f0a290643a43d73344aa6075.s3tc.ctex"]
+dest_files=["res://.godot/imported/garage_ceiling_light_lamp_projector_the_light_0.png-7a663639f0a290643a43d73344aa6075.etc2.ctex"]
 
 [params]
 

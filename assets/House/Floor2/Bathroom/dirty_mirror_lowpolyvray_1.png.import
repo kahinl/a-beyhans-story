@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://db4hk5t3yemqj"
-path.s3tc="res://.godot/imported/dirty_mirror_lowpolyvray_1.png-ba58289e2e43a042b733f5192679c3e8.s3tc.ctex"
+path.etc2="res://.godot/imported/dirty_mirror_lowpolyvray_1.png-ba58289e2e43a042b733f5192679c3e8.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor2/Bathroom/dirty_mirror_lowpolyvray_1.png"
-dest_files=["res://.godot/imported/dirty_mirror_lowpolyvray_1.png-ba58289e2e43a042b733f5192679c3e8.s3tc.ctex"]
+dest_files=["res://.godot/imported/dirty_mirror_lowpolyvray_1.png-ba58289e2e43a042b733f5192679c3e8.etc2.ctex"]
 
 [params]
 

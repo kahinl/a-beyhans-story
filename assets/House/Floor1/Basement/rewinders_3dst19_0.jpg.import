@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2mfm5fv7fhcj"
-path.s3tc="res://.godot/imported/rewinders_3dst19_0.jpg-df5f80723b98c8dd081e1870d1fdd31d.s3tc.ctex"
+path.etc2="res://.godot/imported/rewinders_3dst19_0.jpg-df5f80723b98c8dd081e1870d1fdd31d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/Basement/rewinders_3dst19_0.jpg"
-dest_files=["res://.godot/imported/rewinders_3dst19_0.jpg-df5f80723b98c8dd081e1870d1fdd31d.s3tc.ctex"]
+dest_files=["res://.godot/imported/rewinders_3dst19_0.jpg-df5f80723b98c8dd081e1870d1fdd31d.etc2.ctex"]
 
 [params]
 

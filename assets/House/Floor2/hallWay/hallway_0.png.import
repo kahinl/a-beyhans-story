@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cikmk5xu8go32"
-path.s3tc="res://.godot/imported/hallway_0.png-c8dd870b8f8da4037c3d948cd946732b.s3tc.ctex"
+path.etc2="res://.godot/imported/hallway_0.png-c8dd870b8f8da4037c3d948cd946732b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor2/hallWay/hallway_0.png"
-dest_files=["res://.godot/imported/hallway_0.png-c8dd870b8f8da4037c3d948cd946732b.s3tc.ctex"]
+dest_files=["res://.godot/imported/hallway_0.png-c8dd870b8f8da4037c3d948cd946732b.etc2.ctex"]
 
 [params]
 

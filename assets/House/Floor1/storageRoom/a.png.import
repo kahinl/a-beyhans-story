@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bftno8rn733bi"
-path.s3tc="res://.godot/imported/a.png-215e3df789f8535341a0daf804d9fa93.s3tc.ctex"
+path.etc2="res://.godot/imported/a.png-215e3df789f8535341a0daf804d9fa93.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/House/Floor1/storageRoom/a.png"
-dest_files=["res://.godot/imported/a.png-215e3df789f8535341a0daf804d9fa93.s3tc.ctex"]
+dest_files=["res://.godot/imported/a.png-215e3df789f8535341a0daf804d9fa93.etc2.ctex"]
 
 [params]
 

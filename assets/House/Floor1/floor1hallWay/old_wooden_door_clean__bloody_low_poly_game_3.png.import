@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dc5e0vo3w3xsv"
-path.s3tc="res://.godot/imported/old_wooden_door_clean__bloody_low_poly_game_3.png-1f79f9050361064c66549aee23f478df.s3tc.ctex"
+path.etc2="res://.godot/imported/old_wooden_door_clean__bloody_low_poly_game_3.png-1f79f9050361064c66549aee23f478df.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/floor1hallWay/old_wooden_door_clean__bloody_low_poly_game_3.png"
-dest_files=["res://.godot/imported/old_wooden_door_clean__bloody_low_poly_game_3.png-1f79f9050361064c66549aee23f478df.s3tc.ctex"]
+dest_files=["res://.godot/imported/old_wooden_door_clean__bloody_low_poly_game_3.png-1f79f9050361064c66549aee23f478df.etc2.ctex"]
 
 [params]
 

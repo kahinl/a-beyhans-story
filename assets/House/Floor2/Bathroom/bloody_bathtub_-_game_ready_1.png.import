@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bg1shukygn5ii"
-path.s3tc="res://.godot/imported/bloody_bathtub_-_game_ready_1.png-e3b0da77c826f10840a3f792b1712ed0.s3tc.ctex"
+path.etc2="res://.godot/imported/bloody_bathtub_-_game_ready_1.png-e3b0da77c826f10840a3f792b1712ed0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor2/Bathroom/bloody_bathtub_-_game_ready_1.png"
-dest_files=["res://.godot/imported/bloody_bathtub_-_game_ready_1.png-e3b0da77c826f10840a3f792b1712ed0.s3tc.ctex"]
+dest_files=["res://.godot/imported/bloody_bathtub_-_game_ready_1.png-e3b0da77c826f10840a3f792b1712ed0.etc2.ctex"]
 
 [params]
 

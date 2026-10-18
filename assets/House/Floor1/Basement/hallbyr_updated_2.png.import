@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vmla428dwkta"
-path.s3tc="res://.godot/imported/hallbyr_updated_2.png-7d7503b5c4430b01591ada63f6515f5a.s3tc.ctex"
+path.etc2="res://.godot/imported/hallbyr_updated_2.png-7d7503b5c4430b01591ada63f6515f5a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/Basement/hallbyr_updated_2.png"
-dest_files=["res://.godot/imported/hallbyr_updated_2.png-7d7503b5c4430b01591ada63f6515f5a.s3tc.ctex"]
+dest_files=["res://.godot/imported/hallbyr_updated_2.png-7d7503b5c4430b01591ada63f6515f5a.etc2.ctex"]
 
 [params]
 

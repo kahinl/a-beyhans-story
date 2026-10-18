@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pd35gr6w0h3g"
-path.s3tc="res://.godot/imported/student_pass_low-poly_id-card_0.png-e43a2ee64860cd0ea4d8b09714071e31.s3tc.ctex"
+path.etc2="res://.godot/imported/student_pass_low-poly_id-card_0.png-e43a2ee64860cd0ea4d8b09714071e31.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor2/Bedrooms/room2/student_pass_low-poly_id-card_0.png"
-dest_files=["res://.godot/imported/student_pass_low-poly_id-card_0.png-e43a2ee64860cd0ea4d8b09714071e31.s3tc.ctex"]
+dest_files=["res://.godot/imported/student_pass_low-poly_id-card_0.png-e43a2ee64860cd0ea4d8b09714071e31.etc2.ctex"]
 
 [params]
 

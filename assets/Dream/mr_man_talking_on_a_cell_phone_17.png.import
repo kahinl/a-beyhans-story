@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cs3ci1ifhqpy"
-path.s3tc="res://.godot/imported/mr_man_talking_on_a_cell_phone_17.png-5f1b739f6affab6fd17d7e31674d15ab.s3tc.ctex"
+path.etc2="res://.godot/imported/mr_man_talking_on_a_cell_phone_17.png-5f1b739f6affab6fd17d7e31674d15ab.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/Dream/mr_man_talking_on_a_cell_phone_17.png"
-dest_files=["res://.godot/imported/mr_man_talking_on_a_cell_phone_17.png-5f1b739f6affab6fd17d7e31674d15ab.s3tc.ctex"]
+dest_files=["res://.godot/imported/mr_man_talking_on_a_cell_phone_17.png-5f1b739f6affab6fd17d7e31674d15ab.etc2.ctex"]
 
 [params]
 

@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://1jpmgve80em"
-path.s3tc="res://.godot/imported/abandoned_kitchen_5.png-7509d79c7afa3e64644076fb24f8aa52.s3tc.ctex"
+path.etc2="res://.godot/imported/abandoned_kitchen_5.png-7509d79c7afa3e64644076fb24f8aa52.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/kitchen/abandoned_kitchen_5.png"
-dest_files=["res://.godot/imported/abandoned_kitchen_5.png-7509d79c7afa3e64644076fb24f8aa52.s3tc.ctex"]
+dest_files=["res://.godot/imported/abandoned_kitchen_5.png-7509d79c7afa3e64644076fb24f8aa52.etc2.ctex"]
 
 [params]
 

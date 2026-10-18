@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://m4461ter2wff"
-path.s3tc="res://.godot/imported/carpet (2)_0.jpg-068fc5d923fe1f4dcfa0d2262573553d.s3tc.ctex"
+path.etc2="res://.godot/imported/carpet (2)_0.jpg-068fc5d923fe1f4dcfa0d2262573553d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor2/Bedrooms/room2/carpet (2)_0.jpg"
-dest_files=["res://.godot/imported/carpet (2)_0.jpg-068fc5d923fe1f4dcfa0d2262573553d.s3tc.ctex"]
+dest_files=["res://.godot/imported/carpet (2)_0.jpg-068fc5d923fe1f4dcfa0d2262573553d.etc2.ctex"]
 
 [params]
 

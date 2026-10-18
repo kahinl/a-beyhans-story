@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtnqx2lxqnhkn"
-path.s3tc="res://.godot/imported/copper_tea_pot_1.png-70b3ea3c7f1dff62a3c506285223a6b3.s3tc.ctex"
+path.etc2="res://.godot/imported/copper_tea_pot_1.png-70b3ea3c7f1dff62a3c506285223a6b3.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/Dream/copper_tea_pot_1.png"
-dest_files=["res://.godot/imported/copper_tea_pot_1.png-70b3ea3c7f1dff62a3c506285223a6b3.s3tc.ctex"]
+dest_files=["res://.godot/imported/copper_tea_pot_1.png-70b3ea3c7f1dff62a3c506285223a6b3.etc2.ctex"]
 
 [params]
 

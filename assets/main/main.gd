@@ -10,8 +10,17 @@ func _ready() -> void:
 	await get_tree().create_timer(10.0).timeout
 	$breathing.stop()
 	
+	# SON C - on kapidan cikan oyuncu yine ormana, dongunun basina doner (G16)
+	if GameState.ending_leave_done:
+		await _ending_leave()
+		return
+	
 	await  get_tree().create_timer(15).timeout
 	$instractions/AnimationPlayer.play("inter")
-	
-	
-	
+
+
+func _ending_leave() -> void:
+	await get_tree().create_timer(4.0).timeout
+	await Speech.say(get_node_or_null("extraSpeech/line") as Label, "ending_leave_1")
+	await Speech.say(get_node_or_null("extraSpeech/line") as Label, "ending_leave_2")
+	FadeLayer.fade_and_change_scene("res://assets/main/main_menu.tscn", "default")

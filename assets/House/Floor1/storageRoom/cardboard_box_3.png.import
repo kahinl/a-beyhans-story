@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpjgix43dci51"
-path.s3tc="res://.godot/imported/cardboard_box_3.png-fdc60c9d585cd24311f67217c52fb3e6.s3tc.ctex"
+path.etc2="res://.godot/imported/cardboard_box_3.png-fdc60c9d585cd24311f67217c52fb3e6.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/storageRoom/cardboard_box_3.png"
-dest_files=["res://.godot/imported/cardboard_box_3.png-fdc60c9d585cd24311f67217c52fb3e6.s3tc.ctex"]
+dest_files=["res://.godot/imported/cardboard_box_3.png-fdc60c9d585cd24311f67217c52fb3e6.etc2.ctex"]
 
 [params]
 

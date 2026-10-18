@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dop4ta54uf2e6"
-path.s3tc="res://.godot/imported/wood_ceiling_1.png-0bab86ca73867084d94d0eebb7c68b00.s3tc.ctex"
+path.etc2="res://.godot/imported/wood_ceiling_1.png-0bab86ca73867084d94d0eebb7c68b00.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/floor1hallWay/wood_ceiling_1.png"
-dest_files=["res://.godot/imported/wood_ceiling_1.png-0bab86ca73867084d94d0eebb7c68b00.s3tc.ctex"]
+dest_files=["res://.godot/imported/wood_ceiling_1.png-0bab86ca73867084d94d0eebb7c68b00.etc2.ctex"]
 
 [params]
 

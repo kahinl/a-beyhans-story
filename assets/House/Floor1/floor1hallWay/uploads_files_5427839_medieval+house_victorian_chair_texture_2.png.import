@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://diyvgyj7o28sw"
-path.s3tc="res://.godot/imported/uploads_files_5427839_medieval+house_victorian_chair_texture_2.png-6a2d7a54dbc7afd6f26466d4b44901c9.s3tc.ctex"
+path.etc2="res://.godot/imported/uploads_files_5427839_medieval+house_victorian_chair_texture_2.png-6a2d7a54dbc7afd6f26466d4b44901c9.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/floor1hallWay/uploads_files_5427839_medieval+house_victorian_chair_texture_2.png"
-dest_files=["res://.godot/imported/uploads_files_5427839_medieval+house_victorian_chair_texture_2.png-6a2d7a54dbc7afd6f26466d4b44901c9.s3tc.ctex"]
+dest_files=["res://.godot/imported/uploads_files_5427839_medieval+house_victorian_chair_texture_2.png-6a2d7a54dbc7afd6f26466d4b44901c9.etc2.ctex"]
 
 [params]
 

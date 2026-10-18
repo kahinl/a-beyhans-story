@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cd2qsdrg1rv1s"
-path.s3tc="res://.godot/imported/Screenshot From 2026-03-24 22-09-34.png-31f846c4e154d300ad4fb547aaaf36d7.s3tc.ctex"
+path.etc2="res://.godot/imported/Screenshot From 2026-03-24 22-09-34.png-31f846c4e154d300ad4fb547aaaf36d7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/House/Floor2/Bedrooms/room1/Screenshot From 2026-03-24 22-09-34.png"
-dest_files=["res://.godot/imported/Screenshot From 2026-03-24 22-09-34.png-31f846c4e154d300ad4fb547aaaf36d7.s3tc.ctex"]
+dest_files=["res://.godot/imported/Screenshot From 2026-03-24 22-09-34.png-31f846c4e154d300ad4fb547aaaf36d7.etc2.ctex"]
 
 [params]
 

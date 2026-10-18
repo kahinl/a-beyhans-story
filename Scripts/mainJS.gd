@@ -6,6 +6,8 @@ extends Area3D
 func _on_body_entered(body):
 	if body.name == "Player" and GameState.flashpicked:
 		GameState.monster_encounters += 1
+		if GameState.monster_encounters == 2:
+			Speech.say(get_node_or_null("../../extraSpeech/line") as Label, "monster_watch")
 		if GameState.monster_encounters == 3:
 			trigger_scare(body)
 

@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dv0pxrewkw8xq"
-path.s3tc="res://.godot/imported/ps1_style_newspaper__bloody_and_normal_versions_0.png-e94e3173ab4fcc73b26d716a098d8a0d.s3tc.ctex"
+path.etc2="res://.godot/imported/ps1_style_newspaper__bloody_and_normal_versions_0.png-e94e3173ab4fcc73b26d716a098d8a0d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/kitchen/ps1_style_newspaper__bloody_and_normal_versions_0.png"
-dest_files=["res://.godot/imported/ps1_style_newspaper__bloody_and_normal_versions_0.png-e94e3173ab4fcc73b26d716a098d8a0d.s3tc.ctex"]
+dest_files=["res://.godot/imported/ps1_style_newspaper__bloody_and_normal_versions_0.png-e94e3173ab4fcc73b26d716a098d8a0d.etc2.ctex"]
 
 [params]
 

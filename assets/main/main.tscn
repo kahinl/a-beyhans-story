@@ -731,3 +731,18 @@ vertical_alignment = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="instractions" unique_id=1806302020]
 libraries/ = SubResource("AnimationLibrary_8sct3")
+
+
+[node name="extraSpeech" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="line" type="Label" parent="extraSpeech"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 454.0
+offset_top = 786.0
+offset_right = 1454.0
+offset_bottom = 900.0
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3

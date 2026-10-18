@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckj6eitlfk08"
-path.s3tc="res://.godot/imported/mesa_colonial_dirty_0.png-18a0915418f7bf69f64d60e876930689.s3tc.ctex"
+path.etc2="res://.godot/imported/mesa_colonial_dirty_0.png-18a0915418f7bf69f64d60e876930689.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/floor1hallWay/mesa_colonial_dirty_0.png"
-dest_files=["res://.godot/imported/mesa_colonial_dirty_0.png-18a0915418f7bf69f64d60e876930689.s3tc.ctex"]
+dest_files=["res://.godot/imported/mesa_colonial_dirty_0.png-18a0915418f7bf69f64d60e876930689.etc2.ctex"]
 
 [params]
 

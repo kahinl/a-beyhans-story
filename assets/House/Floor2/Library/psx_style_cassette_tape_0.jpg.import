@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bh4u2gh1hhs4f"
-path.s3tc="res://.godot/imported/psx_style_cassette_tape_0.jpg-8fc4abbb9eaea7f41f06da464d46bc14.s3tc.ctex"
+path.etc2="res://.godot/imported/psx_style_cassette_tape_0.jpg-8fc4abbb9eaea7f41f06da464d46bc14.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor2/Library/psx_style_cassette_tape_0.jpg"
-dest_files=["res://.godot/imported/psx_style_cassette_tape_0.jpg-8fc4abbb9eaea7f41f06da464d46bc14.s3tc.ctex"]
+dest_files=["res://.godot/imported/psx_style_cassette_tape_0.jpg-8fc4abbb9eaea7f41f06da464d46bc14.etc2.ctex"]
 
 [params]
 

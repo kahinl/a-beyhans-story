@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbx7aemn86nc6"
-path.s3tc="res://.godot/imported/washing_machine_2k_2_variations_8.png-9072aed73b793b61d1e03bb8dd7a6e36.s3tc.ctex"
+path.etc2="res://.godot/imported/washing_machine_2k_2_variations_8.png-9072aed73b793b61d1e03bb8dd7a6e36.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/Basement/washing_machine_2k_2_variations_8.png"
-dest_files=["res://.godot/imported/washing_machine_2k_2_variations_8.png-9072aed73b793b61d1e03bb8dd7a6e36.s3tc.ctex"]
+dest_files=["res://.godot/imported/washing_machine_2k_2_variations_8.png-9072aed73b793b61d1e03bb8dd7a6e36.etc2.ctex"]
 
 [params]
 

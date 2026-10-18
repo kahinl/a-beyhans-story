@@ -54,6 +54,8 @@
 [ext_resource type="AudioStream" uid="uid://cjb73s4cfbxmu" path="res://assets/House/Floor2/Bedrooms/room2/39bc1c56-1475-40c0-a4f8-e896bd16215b.wav" id="56_fhmf0"]
 [ext_resource type="Script" uid="uid://wjjvpo1kqtl3" path="res://Scripts/DOORS/fromRoom2.gd" id="57_fhmf0"]
 [ext_resource type="AudioStream" uid="uid://bw4j60xsqx83m" path="res://assets/House/Floor2/Bedrooms/room2/d8adef87-309b-4bd5-9bef-60cd92610e2d.wav" id="57_luk7l"]
+[ext_resource type="Script" path="res://Scripts/inspect_item.gd" id="900_new0"]
+[ext_resource type="Script" path="res://Scripts/frontKey.gd" id="901_new1"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_a6f2s"]
 panorama = ExtResource("1_qsumi")
@@ -3933,6 +3935,25 @@ _data = {
 [sub_resource type="BoxShape3D" id="BoxShape3D_mxh40"]
 size = Vector3(1, 3.4271698, 1.7667542)
 
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ph_small"]
+size = Vector3(0.3, 0.3, 0.3)
+[sub_resource type="BoxMesh" id="BoxMesh_ph_small"]
+size = Vector3(0.3, 0.3, 0.3)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ph_small"]
+albedo_color = Color(0.86, 0.72, 0.34, 1)
+emission_enabled = true
+emission = Color(0.86, 0.72, 0.34, 1)
+emission_energy_multiplier = 0.7
+[sub_resource type="BoxShape3D" id="BoxShape3D_ph_key"]
+size = Vector3(0.22, 0.06, 0.06)
+[sub_resource type="BoxMesh" id="BoxMesh_ph_key"]
+size = Vector3(0.22, 0.06, 0.06)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ph_key"]
+albedo_color = Color(0.9, 0.85, 0.4, 1)
+emission_enabled = true
+emission = Color(0.9, 0.85, 0.4, 1)
+emission_energy_multiplier = 0.7
 [node name="Node3D" type="Node3D" unique_id=1488696635]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1766626935]
@@ -5655,3 +5676,83 @@ texture = ExtResource("37_8acny")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.077918, 2.807964, 3.8291347)
 stream = ExtResource("55_qsumi")
 volume_db = -2.0
+
+
+[node name="extraSpeech" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="line" type="Label" parent="extraSpeech"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 454.0
+offset_top = 786.0
+offset_right = 1454.0
+offset_bottom = 900.0
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="tape01" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.29, 0.68, 3.03)
+script = ExtResource("900_new0")
+flag_name = "tape1_picked"
+destroy_on_pick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="tape01"]
+shape = SubResource("BoxShape3D_ph_small")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="tape01"]
+mesh = SubResource("BoxMesh_ph_small")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_small")
+
+[node name="play1" type="CanvasLayer" parent="tape01"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="tape01/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("37_8acny")
+
+[node name="tape02" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.29, 0.68, 3.63)
+script = ExtResource("900_new0")
+flag_name = "tape2_picked"
+requires_flag = "tape1_played"
+destroy_on_pick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="tape02"]
+shape = SubResource("BoxShape3D_ph_small")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="tape02"]
+mesh = SubResource("BoxMesh_ph_small")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_small")
+
+[node name="play1" type="CanvasLayer" parent="tape02"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="tape02/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("37_8acny")
+
+[node name="frontKey" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.09, 0.68, 3.03)
+script = ExtResource("901_new1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="frontKey"]
+shape = SubResource("BoxShape3D_ph_key")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="frontKey"]
+mesh = SubResource("BoxMesh_ph_key")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_key")
+
+[node name="play2" type="CanvasLayer" parent="frontKey"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="frontKey/play2"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("37_8acny")

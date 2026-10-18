@@ -788,7 +788,7 @@ offset_right = 1290.0
 offset_bottom = 338.0
 theme_override_fonts/font = ExtResource("15_fbhw1")
 theme_override_font_sizes/font_size = 110
-text = "AFTER THE THRESHOLD"
+text = "A Beyhan's story"
 
 [node name="Label2" type="Label" parent="." unique_id=662971018]
 self_modulate = Color(0.08627451, 0.627451, 0.52156866, 1)
@@ -840,7 +840,7 @@ offset_right = 1406.0
 offset_bottom = 245.0
 theme_override_fonts/font = ExtResource("15_fbhw1")
 theme_override_font_sizes/font_size = 90
-text = "AFTER THE THRESHOLD"
+text = "A Beyhan's story"
 
 [node name="Label6" type="Label" parent="CREDITS" unique_id=1368212605]
 self_modulate = Color(0.08627451, 0.627451, 0.52156866, 1)

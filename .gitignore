@@ -10,3 +10,4 @@ linux.export/
 *.obj
 *.pck
 *.exe
+/build/

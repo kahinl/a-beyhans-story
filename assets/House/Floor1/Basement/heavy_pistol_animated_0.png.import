@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://u00vg6wi7kct"
-path.s3tc="res://.godot/imported/heavy_pistol_animated_0.png-9f9082cf333b9a826faac869b8b97e14.s3tc.ctex"
+path.etc2="res://.godot/imported/heavy_pistol_animated_0.png-9f9082cf333b9a826faac869b8b97e14.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/Basement/heavy_pistol_animated_0.png"
-dest_files=["res://.godot/imported/heavy_pistol_animated_0.png-9f9082cf333b9a826faac869b8b97e14.s3tc.ctex"]
+dest_files=["res://.godot/imported/heavy_pistol_animated_0.png-9f9082cf333b9a826faac869b8b97e14.etc2.ctex"]
 
 [params]
 

@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://coe23h6bnb00m"
-path.s3tc="res://.godot/imported/painted_wooden_door__gameready_pbr_4.png-ca5427605478f3f909db5587dd15c25c.s3tc.ctex"
+path.etc2="res://.godot/imported/painted_wooden_door__gameready_pbr_4.png-ca5427605478f3f909db5587dd15c25c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/Dream/painted_wooden_door__gameready_pbr_4.png"
-dest_files=["res://.godot/imported/painted_wooden_door__gameready_pbr_4.png-ca5427605478f3f909db5587dd15c25c.s3tc.ctex"]
+dest_files=["res://.godot/imported/painted_wooden_door__gameready_pbr_4.png-ca5427605478f3f909db5587dd15c25c.etc2.ctex"]
 
 [params]
 

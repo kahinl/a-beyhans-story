@@ -34,6 +34,7 @@
 [ext_resource type="AudioStream" uid="uid://bbepmkkrik1tx" path="res://assets/House/Floor1/kitchen/freesound_community-footstep-drag-indoors-104989.mp3" id="32_u1qrb"]
 [ext_resource type="AudioStream" uid="uid://l5xfv35eu1sh" path="res://assets/House/Floor1/freesound_community-gate-latch-90988.mp3" id="34_tn7cw"]
 [ext_resource type="PackedScene" uid="uid://b77cofg7wjxcx" path="res://assets/player/player.tscn" id="51_xtado"]
+[ext_resource type="Script" path="res://Scripts/inspect_item.gd" id="900_new0"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_ljeh4"]
 
@@ -1273,6 +1274,25 @@ _data = {
 &"need2": SubResource("Animation_263i1")
 }
 
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ph_small"]
+size = Vector3(0.3, 0.3, 0.3)
+[sub_resource type="BoxMesh" id="BoxMesh_ph_small"]
+size = Vector3(0.3, 0.3, 0.3)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ph_small"]
+albedo_color = Color(0.86, 0.72, 0.34, 1)
+emission_enabled = true
+emission = Color(0.86, 0.72, 0.34, 1)
+emission_energy_multiplier = 0.7
+[sub_resource type="BoxShape3D" id="BoxShape3D_ph_flat"]
+size = Vector3(0.55, 0.42, 0.06)
+[sub_resource type="BoxMesh" id="BoxMesh_ph_flat"]
+size = Vector3(0.55, 0.42, 0.06)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ph_flat"]
+albedo_color = Color(0.78, 0.8, 0.72, 1)
+emission_enabled = true
+emission = Color(0.78, 0.8, 0.72, 1)
+emission_energy_multiplier = 0.7
 [node name="Node3D" type="Node3D" unique_id=2022194411]
 script = ExtResource("1_5smyw")
 
@@ -1596,3 +1616,108 @@ libraries/ = SubResource("AnimationLibrary_wa4ei")
 [node name="open" type="AudioStreamPlayer" parent="." unique_id=1090683900]
 stream = ExtResource("34_tn7cw")
 volume_db = 5.0
+
+
+[node name="extraSpeech" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="line" type="Label" parent="extraSpeech"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 454.0
+offset_top = 786.0
+offset_right = 1454.0
+offset_bottom = 900.0
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="mugs" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.41, 1.68, 9.13)
+script = ExtResource("900_new0")
+flag_name = "kitchen_mugs_seen"
+speech_key = "kitchen_2"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="mugs"]
+shape = SubResource("BoxShape3D_ph_small")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="mugs"]
+mesh = SubResource("BoxMesh_ph_small")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_small")
+
+[node name="play1" type="CanvasLayer" parent="mugs"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="mugs/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("25_a45v1")
+
+[node name="newspaper" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.61, 1.68, 9.13)
+script = ExtResource("900_new0")
+flag_name = "newspaper_seen"
+speech_key = "newspaper_1"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="newspaper"]
+shape = SubResource("BoxShape3D_ph_flat")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="newspaper"]
+mesh = SubResource("BoxMesh_ph_flat")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_flat")
+
+[node name="play1" type="CanvasLayer" parent="newspaper"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="newspaper/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("25_a45v1")
+
+[node name="recipe" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.01, 1.68, 9.53)
+script = ExtResource("900_new0")
+flag_name = "recipe_read"
+speech_key = "mom_recipe"
+destroy_on_pick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="recipe"]
+shape = SubResource("BoxShape3D_ph_flat")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="recipe"]
+mesh = SubResource("BoxMesh_ph_flat")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_flat")
+
+[node name="play1" type="CanvasLayer" parent="recipe"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="recipe/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("25_a45v1")
+
+[node name="journal03" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.71, 1.68, 8.03)
+script = ExtResource("900_new0")
+flag_name = "journal_03_read"
+speech_key = "journal_03"
+destroy_on_pick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="journal03"]
+shape = SubResource("BoxShape3D_ph_flat")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="journal03"]
+mesh = SubResource("BoxMesh_ph_flat")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_flat")
+
+[node name="play1" type="CanvasLayer" parent="journal03"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="journal03/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("25_a45v1")

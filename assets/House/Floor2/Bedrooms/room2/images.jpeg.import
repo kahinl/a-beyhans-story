@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://iikv6x64b6ij"
-path.s3tc="res://.godot/imported/images.jpeg-0f75b5076909b47a24a844091e6d7bc4.s3tc.ctex"
+path.etc2="res://.godot/imported/images.jpeg-0f75b5076909b47a24a844091e6d7bc4.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/House/Floor2/Bedrooms/room2/images.jpeg"
-dest_files=["res://.godot/imported/images.jpeg-0f75b5076909b47a24a844091e6d7bc4.s3tc.ctex"]
+dest_files=["res://.godot/imported/images.jpeg-0f75b5076909b47a24a844091e6d7bc4.etc2.ctex"]
 
 [params]
 

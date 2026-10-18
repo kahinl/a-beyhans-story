@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dut64wf4qnkxq"
-path.s3tc="res://.godot/imported/a2fc732395e9423eb61f7793991140eb_1.png-b8eeb49e8a1c3271e21a8239e1be7623.s3tc.ctex"
+path.etc2="res://.godot/imported/a2fc732395e9423eb61f7793991140eb_1.png-b8eeb49e8a1c3271e21a8239e1be7623.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor2/Library/a2fc732395e9423eb61f7793991140eb_1.png"
-dest_files=["res://.godot/imported/a2fc732395e9423eb61f7793991140eb_1.png-b8eeb49e8a1c3271e21a8239e1be7623.s3tc.ctex"]
+dest_files=["res://.godot/imported/a2fc732395e9423eb61f7793991140eb_1.png-b8eeb49e8a1c3271e21a8239e1be7623.etc2.ctex"]
 
 [params]
 

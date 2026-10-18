@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxxv3ojb5ewrv"
-path.s3tc="res://.godot/imported/tv_cctv_monitor_4.png-78dd25c7fe9375b335a8ed977f5f73fc.s3tc.ctex"
+path.etc2="res://.godot/imported/tv_cctv_monitor_4.png-78dd25c7fe9375b335a8ed977f5f73fc.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/Basement/tv_cctv_monitor_4.png"
-dest_files=["res://.godot/imported/tv_cctv_monitor_4.png-78dd25c7fe9375b335a8ed977f5f73fc.s3tc.ctex"]
+dest_files=["res://.godot/imported/tv_cctv_monitor_4.png-78dd25c7fe9375b335a8ed977f5f73fc.etc2.ctex"]
 
 [params]
 

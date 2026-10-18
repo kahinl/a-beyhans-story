@@ -11,6 +11,9 @@
 [ext_resource type="Texture2D" uid="uid://bs0g5pm4tuwgu" path="res://assets/House/Floor2/Bedrooms/room3/the_room (1)_2.png" id="12_hxgpk"]
 [ext_resource type="PackedScene" uid="uid://b77cofg7wjxcx" path="res://assets/player/player.tscn" id="16_hxgpk"]
 [ext_resource type="Script" uid="uid://cfe46tur13eq3" path="res://Scripts/f_room3.gd" id="16_n6xhp"]
+[ext_resource type="Script" path="res://Scripts/scene_intro.gd" id="900_new0"]
+[ext_resource type="Script" path="res://Scripts/inspect_item.gd" id="901_new1"]
+[ext_resource type="Texture2D" uid="uid://dndvuuny5l3uo" path="res://globalTools/Hover.png" id="902_new2"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_mxh40"]
 size = Vector3(1, 3.4271698, 1.7667542)
@@ -489,6 +492,25 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_4vlvm")
 
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ph_small"]
+size = Vector3(0.3, 0.3, 0.3)
+[sub_resource type="BoxMesh" id="BoxMesh_ph_small"]
+size = Vector3(0.3, 0.3, 0.3)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ph_small"]
+albedo_color = Color(0.86, 0.72, 0.34, 1)
+emission_enabled = true
+emission = Color(0.86, 0.72, 0.34, 1)
+emission_energy_multiplier = 0.7
+[sub_resource type="BoxShape3D" id="BoxShape3D_ph_flat"]
+size = Vector3(0.55, 0.42, 0.06)
+[sub_resource type="BoxMesh" id="BoxMesh_ph_flat"]
+size = Vector3(0.55, 0.42, 0.06)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ph_flat"]
+albedo_color = Color(0.78, 0.8, 0.72, 1)
+emission_enabled = true
+emission = Color(0.78, 0.8, 0.72, 1)
+emission_energy_multiplier = 0.7
 [node name="Node3D" type="Node3D" unique_id=567660204]
 
 [node name="Sketchfab_Scene" type="Node3D" parent="." unique_id=1839042294]
@@ -572,5 +594,158 @@ mesh = SubResource("ArrayMesh_aiffa")
 [node name="Player" parent="." unique_id=1379905982 instance=ExtResource("16_hxgpk")]
 transform = Transform3D(-0.03032915, 0, -0.99954, 0, 1, 0, 0.99954, 0, -0.03032915, -2.2184227, 0.84061503, -1.7749894)
 
+
+[node name="extraSpeech" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="line" type="Label" parent="extraSpeech"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 454.0
+offset_top = 786.0
+offset_right = 1454.0
+offset_bottom = 900.0
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="intro" type="Node" parent="."]
+script = ExtResource("900_new0")
+played_flag = "room3_speech_played"
+speech_key = "room3_1"
+
+[node name="bed3" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9, 0.5, -1.6)
+script = ExtResource("901_new1")
+flag_name = "room3_2_seen"
+speech_key = "room3_2"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="bed3"]
+shape = SubResource("BoxShape3D_ph_small")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="bed3"]
+mesh = SubResource("BoxMesh_ph_small")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_small")
+
+[node name="play1" type="CanvasLayer" parent="bed3"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="bed3/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("902_new2")
+
+[node name="chains3" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 0.6, -1.9)
+script = ExtResource("901_new1")
+flag_name = "room3_4_seen"
+speech_key = "room3_4"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="chains3"]
+shape = SubResource("BoxShape3D_ph_small")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="chains3"]
+mesh = SubResource("BoxMesh_ph_small")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_small")
+
+[node name="play1" type="CanvasLayer" parent="chains3"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="chains3/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("902_new2")
+
+[node name="doseChart" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3, 1.0, -1.1)
+script = ExtResource("901_new1")
+flag_name = "room3_5_seen"
+speech_key = "room3_5"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="doseChart"]
+shape = SubResource("BoxShape3D_ph_flat")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="doseChart"]
+mesh = SubResource("BoxMesh_ph_flat")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_flat")
+
+[node name="play1" type="CanvasLayer" parent="doseChart"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="doseChart/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("902_new2")
+
+[node name="doorInside" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3, 1.4, -0.9)
+script = ExtResource("901_new1")
+flag_name = "room3_3_seen"
+speech_key = "room3_3"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="doorInside"]
+shape = SubResource("BoxShape3D_ph_flat")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="doorInside"]
+mesh = SubResource("BoxMesh_ph_flat")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_flat")
+
+[node name="play1" type="CanvasLayer" parent="doorInside"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="doorInside/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("902_new2")
+
+[node name="letter3" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0, 0.95, -1.0)
+script = ExtResource("901_new1")
+flag_name = "letter3_picked"
+speech_key = "letter3_1"
+destroy_on_pick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="letter3"]
+shape = SubResource("BoxShape3D_ph_flat")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="letter3"]
+mesh = SubResource("BoxMesh_ph_flat")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_flat")
+
+[node name="play1" type="CanvasLayer" parent="letter3"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="letter3/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("902_new2")
+
+[node name="journal05" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0.95, -1.3)
+script = ExtResource("901_new1")
+flag_name = "journal_05_read"
+speech_key = "journal_05"
+destroy_on_pick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="journal05"]
+shape = SubResource("BoxShape3D_ph_flat")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="journal05"]
+mesh = SubResource("BoxMesh_ph_flat")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_flat")
+
+[node name="play1" type="CanvasLayer" parent="journal05"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="journal05/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("902_new2")
 [connection signal="body_entered" from="Sketchfab_Scene/froom3Door" to="Sketchfab_Scene/froom3Door" method="_on_body_entered"]
 [connection signal="body_exited" from="Sketchfab_Scene/froom3Door" to="Sketchfab_Scene/froom3Door" method="_on_body_exited"]

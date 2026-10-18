@@ -32,6 +32,8 @@
 [ext_resource type="AudioStream" uid="uid://bmpkkih6olq8w" path="res://assets/House/Floor2/hallWay/freesound_community-phone-hang-up-46793.mp3" id="30_qjq0o"]
 [ext_resource type="AudioStream" uid="uid://byqvblhkg6xrw" path="res://assets/House/Floor2/hallWay/freesound_community-old-phone-ringtone-poland-104537 (mp3cut.net) (1).mp3" id="31_qjq0o"]
 [ext_resource type="AudioStream" uid="uid://c5y3fspfumhvu" path="res://assets/House/Floor2/hallWay/freesound_community-running-on-wooden-floorboards-42532.mp3" id="32_08tvg"]
+[ext_resource type="Script" path="res://Scripts/inspect_item.gd" id="900_new0"]
+[ext_resource type="Script" path="res://Scripts/DOORS/generic_door.gd" id="901_new1"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_vacjg"]
 panorama = ExtResource("1_4fwem")
@@ -929,6 +931,25 @@ _data = {
 &"need1": SubResource("Animation_wn067")
 }
 
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ph_small"]
+size = Vector3(0.3, 0.3, 0.3)
+[sub_resource type="BoxMesh" id="BoxMesh_ph_small"]
+size = Vector3(0.3, 0.3, 0.3)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ph_small"]
+albedo_color = Color(0.86, 0.72, 0.34, 1)
+emission_enabled = true
+emission = Color(0.86, 0.72, 0.34, 1)
+emission_energy_multiplier = 0.7
+[sub_resource type="BoxShape3D" id="BoxShape3D_ph_door"]
+size = Vector3(1.0, 2.0, 0.15)
+[sub_resource type="BoxMesh" id="BoxMesh_ph_door"]
+size = Vector3(1.0, 2.0, 0.15)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ph_door"]
+albedo_color = Color(0.72, 0.24, 0.22, 1)
+emission_enabled = true
+emission = Color(0.72, 0.24, 0.22, 1)
+emission_energy_multiplier = 0.7
 [node name="Node3D" type="Node3D" unique_id=12390503]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=182937356]
@@ -1246,3 +1267,96 @@ vertical_alignment = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="needs" unique_id=195620108]
 libraries/ = SubResource("AnimationLibrary_ricge")
+
+
+[node name="extraSpeech" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="line" type="Label" parent="extraSpeech"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 454.0
+offset_top = 786.0
+offset_right = 1454.0
+offset_bottom = 900.0
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="giftBird" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.9, 1.0, 2.53)
+script = ExtResource("900_new0")
+flag_name = "gift_bird_found"
+speech_key = "monster_gift"
+requires_flag = "tape2_played"
+counter_name = "birds_found"
+reward_key = "bird_all"
+reward_flag = "bird_all_seen"
+counter_target = 3
+destroy_on_pick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="giftBird"]
+shape = SubResource("BoxShape3D_ph_small")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="giftBird"]
+mesh = SubResource("BoxMesh_ph_small")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_small")
+
+[node name="play1" type="CanvasLayer" parent="giftBird"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="giftBird/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("22_dppxw")
+
+[node name="toRoom3Door" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.08, 1.15, -3.2)
+script = ExtResource("901_new1")
+target_scene = "res://assets/House/Floor2/Bedrooms/room3.tscn"
+spawn_name = "default"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="toRoom3Door"]
+shape = SubResource("BoxShape3D_ph_door")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="toRoom3Door"]
+mesh = SubResource("BoxMesh_ph_door")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_door")
+
+[node name="play1" type="CanvasLayer" parent="toRoom3Door"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="toRoom3Door/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("22_dppxw")
+
+[node name="toAtticDoor" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 1.18, 3.7)
+script = ExtResource("901_new1")
+target_scene = "res://assets/House/Floor2/attic.tscn"
+spawn_name = "from_hallway"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="toAtticDoor"]
+shape = SubResource("BoxShape3D_ph_door")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="toAtticDoor"]
+mesh = SubResource("BoxMesh_ph_door")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_door")
+
+[node name="play1" type="CanvasLayer" parent="toAtticDoor"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="toAtticDoor/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("22_dppxw")
+
+[node name="from_attic" type="Marker3D" parent="SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.26, 0.17, 2.0)
+
+[node name="from_room3" type="Marker3D" parent="SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.12, 0.21, -2.4)

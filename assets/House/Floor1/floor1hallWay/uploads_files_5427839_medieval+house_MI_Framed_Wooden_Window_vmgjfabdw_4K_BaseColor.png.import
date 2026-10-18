@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtur5a7gxtrb"
-path.s3tc="res://.godot/imported/uploads_files_5427839_medieval+house_MI_Framed_Wooden_Window_vmgjfabdw_4K_BaseColor.png-c40566cab7f5fd40867ac1f6b64b263b.s3tc.ctex"
+path.etc2="res://.godot/imported/uploads_files_5427839_medieval+house_MI_Framed_Wooden_Window_vmgjfabdw_4K_BaseColor.png-c40566cab7f5fd40867ac1f6b64b263b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/floor1hallWay/uploads_files_5427839_medieval+house_MI_Framed_Wooden_Window_vmgjfabdw_4K_BaseColor.png"
-dest_files=["res://.godot/imported/uploads_files_5427839_medieval+house_MI_Framed_Wooden_Window_vmgjfabdw_4K_BaseColor.png-c40566cab7f5fd40867ac1f6b64b263b.s3tc.ctex"]
+dest_files=["res://.godot/imported/uploads_files_5427839_medieval+house_MI_Framed_Wooden_Window_vmgjfabdw_4K_BaseColor.png-c40566cab7f5fd40867ac1f6b64b263b.etc2.ctex"]
 
 [params]
 

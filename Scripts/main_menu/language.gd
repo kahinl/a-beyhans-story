@@ -4,13 +4,19 @@ extends OptionButton
 
 var languages = {
 	"English": "en",
-	"العربية": "ar"
+	"العربية": "ar",
+	"Türkçe": "tr"
 }
 
 func _ready():
 	clear()
 	for lang_name in languages.keys():
 		add_item(lang_name)
+	var current = TranslationServer.get_locale()
+	for i in languages.size():
+		if languages[languages.keys()[i]] == current:
+			selected = i
+			break
 	
 	item_selected.connect(_on_language_selected)
 

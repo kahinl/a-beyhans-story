@@ -15,9 +15,15 @@ extends StaticBody3D
 @onready var card = $"../accessCard/AnimationPlayer"
 @onready var person1 = $"../Person1"
 @onready var person2 = $"../Person2"
+@onready var line = $"../extraSpeech/line"
 
 
 
+
+const TAPE_LINES := {
+	"tape1": ["tape1_1", "tape1_2"],
+	"tape2": ["tape2_1", "tape2_2", "tape2_3"],
+}
 
 var loop_start = 2.36
 var loop_end = 6.0
@@ -26,7 +32,7 @@ var looping_cassette = false
 func _ready():
 	GameState.interaction_locked = false
 
-	if GameState.casset_putted:
+	if GameState.casset_putted and GameState.tape1_played and GameState.tape2_played:
 		$CollisionShape3D.disabled = true
 
 		
@@ -40,6 +46,10 @@ func _process(delta):
 
 func interact():
 	if GameState.interaction_locked: 
+		return
+
+	if GameState.casset_putted:
+		await _play_tape()
 		return
 
 	if GameState.Cassette_picked:
@@ -95,9 +105,42 @@ func interact():
 		fade.stop()
 
 		GameState.casset_putted = true
+		GameState.interaction_locked = false
+		# Kasetler sonradan da alinabilsin diye TV etkilesimde kalir (G09)
+		$CollisionShape3D.disabled = false
 
 	else:
 		action.play("need1")
+
+# TAPE-01 / TAPE-02: orijinal kaset akisi bittikten sonra ayni TV'de oynar (G09)
+func _play_tape() -> void:
+	var tape := ""
+	if GameState.tape1_picked and not GameState.tape1_played:
+		tape = "tape1"
+	elif GameState.tape2_picked and not GameState.tape2_played:
+		tape = "tape2"
+
+	if tape == "":
+		return
+
+	GameState.set(tape + "_played", true)
+	GameState.interaction_locked = true
+	$CollisionShape3D.disabled = true
+
+	Visualnoise.visible = true
+	whiteNoise.play()
+	cassetPlayer.play()
+
+	for key in TAPE_LINES[tape]:
+		await Speech.say(line, key)
+
+	cassetPlayer.stop()
+	whiteNoise.stop()
+	Visualnoise.visible = false
+
+	GameState.interaction_locked = false
+	if not (GameState.tape1_played and GameState.tape2_played):
+		$CollisionShape3D.disabled = false
 
 # This runs independently of interact()
 func start_cassette_loop() -> void:

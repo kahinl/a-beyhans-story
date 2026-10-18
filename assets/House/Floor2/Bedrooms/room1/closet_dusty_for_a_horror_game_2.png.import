@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dlo30domyqxba"
-path.s3tc="res://.godot/imported/closet_dusty_for_a_horror_game_2.png-3580f8fd93a56d9b0b888e01178aa039.s3tc.ctex"
+path.etc2="res://.godot/imported/closet_dusty_for_a_horror_game_2.png-3580f8fd93a56d9b0b888e01178aa039.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor2/Bedrooms/room1/closet_dusty_for_a_horror_game_2.png"
-dest_files=["res://.godot/imported/closet_dusty_for_a_horror_game_2.png-3580f8fd93a56d9b0b888e01178aa039.s3tc.ctex"]
+dest_files=["res://.godot/imported/closet_dusty_for_a_horror_game_2.png-3580f8fd93a56d9b0b888e01178aa039.etc2.ctex"]
 
 [params]
 

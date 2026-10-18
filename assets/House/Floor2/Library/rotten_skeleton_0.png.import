@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dcq4tn5suyifs"
-path.s3tc="res://.godot/imported/rotten_skeleton_0.png-0adf4fb90d6e384b3f70307c114dc92f.s3tc.ctex"
+path.etc2="res://.godot/imported/rotten_skeleton_0.png-0adf4fb90d6e384b3f70307c114dc92f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor2/Library/rotten_skeleton_0.png"
-dest_files=["res://.godot/imported/rotten_skeleton_0.png-0adf4fb90d6e384b3f70307c114dc92f.s3tc.ctex"]
+dest_files=["res://.godot/imported/rotten_skeleton_0.png-0adf4fb90d6e384b3f70307c114dc92f.etc2.ctex"]
 
 [params]
 

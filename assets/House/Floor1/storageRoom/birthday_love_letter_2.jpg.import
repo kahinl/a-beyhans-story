@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b43o06ae6o5l3"
-path.s3tc="res://.godot/imported/birthday_love_letter_2.jpg-ba983db8f7ce2ffe7f60ec577e005f65.s3tc.ctex"
+path.etc2="res://.godot/imported/birthday_love_letter_2.jpg-ba983db8f7ce2ffe7f60ec577e005f65.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/storageRoom/birthday_love_letter_2.jpg"
-dest_files=["res://.godot/imported/birthday_love_letter_2.jpg-ba983db8f7ce2ffe7f60ec577e005f65.s3tc.ctex"]
+dest_files=["res://.godot/imported/birthday_love_letter_2.jpg-ba983db8f7ce2ffe7f60ec577e005f65.etc2.ctex"]
 
 [params]
 

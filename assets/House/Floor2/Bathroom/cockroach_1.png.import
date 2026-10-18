@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvt2smm0wbxai"
-path.s3tc="res://.godot/imported/cockroach_1.png-cdb615a8b404be6cff468051c4e7c17e.s3tc.ctex"
+path.etc2="res://.godot/imported/cockroach_1.png-cdb615a8b404be6cff468051c4e7c17e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor2/Bathroom/cockroach_1.png"
-dest_files=["res://.godot/imported/cockroach_1.png-cdb615a8b404be6cff468051c4e7c17e.s3tc.ctex"]
+dest_files=["res://.godot/imported/cockroach_1.png-cdb615a8b404be6cff468051c4e7c17e.etc2.ctex"]
 
 [params]
 

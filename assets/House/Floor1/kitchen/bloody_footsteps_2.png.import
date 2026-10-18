@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxve80wuq43y5"
-path.s3tc="res://.godot/imported/bloody_footsteps_2.png-7d89b5e737d1996f80c37f3836d716c8.s3tc.ctex"
+path.etc2="res://.godot/imported/bloody_footsteps_2.png-7d89b5e737d1996f80c37f3836d716c8.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/kitchen/bloody_footsteps_2.png"
-dest_files=["res://.godot/imported/bloody_footsteps_2.png-7d89b5e737d1996f80c37f3836d716c8.s3tc.ctex"]
+dest_files=["res://.godot/imported/bloody_footsteps_2.png-7d89b5e737d1996f80c37f3836d716c8.etc2.ctex"]
 
 [params]
 

@@ -61,6 +61,11 @@ func interact():
 	if is_processing_shot or not activated:
 		return
 
+	# SON B: suringe bulunduysa ates etmek yerine yanina gidersin (G15)
+	if GameState.syringe_found and not GameState.ending_holdon_done:
+		await _ending_holdon()
+		return
+
 	if shoot_anim:
 		is_processing_shot = true
 		shooted += 1 
@@ -102,16 +107,58 @@ func die():
 	$CollisionShape3D.set_deferred("disabled", true)
 	$Area3D/CollisionShape3D.set_deferred("disabled", true) 
 	
-	black.play("fade_in")
-	
 	# إيقاف أصوات البيئة والوحش
 	$"../../../MosterShows".stop()
 	$"../../../MosterShows2".stop()
 	$"../../../BackgroundSound".stop()
+
+	# SON A: karartma baslamadan once son sozler (G14)
+	if not GameState.ending_letgo_done:
+		GameState.ending_letgo_done = true
+		await get_tree().create_timer(2.0).timeout
+		await Speech.say(_line(), "ending_letgo_1")
+		await Speech.say(_line(), "ending_letgo_2")
+
+	black.play("fade_in")
 	
 	await black.animation_finished
 	# الانتقال للمنيو الآن سيكون "صامتاً" تماماً
 	get_tree().change_scene_to_file("res://assets/main/main_menu.tscn")
+
+# SON B - suringe bulunduysa ates etmek yerine yanina gidersin (G15)
+func _ending_holdon():
+	is_processing_shot = true
+	can_move = false
+	hide_prompt()
+
+	GameState.ending_holdon_done = true
+
+	var player = $"../../../Player"
+	if player and player.has_method("freeze"):
+		player.freeze()
+
+	if $"../../../steps":
+		$"../../../steps".stop()
+
+	$CollisionShape3D.set_deferred("disabled", true)
+	$Area3D/CollisionShape3D.set_deferred("disabled", true)
+
+	$"../../../MosterShows".stop()
+	$"../../../MosterShows2".stop()
+	$"../../../BackgroundSound".stop()
+	Wind.stop()
+	Comfy.stop()
+
+	await Speech.say(_line(), "ending_holdon_1")
+	await Speech.say(_line(), "ending_holdon_2")
+	await Speech.say(_line(), "ending_holdon_3")
+
+	black.play("fade_in")
+	await black.animation_finished
+	get_tree().change_scene_to_file("res://assets/main/main_menu.tscn")
+
+func _line() -> Label:
+	return get_node_or_null("../../../extraSpeech/line") as Label
 
 func show_prompt():
 	if visible and not is_processing_shot: 

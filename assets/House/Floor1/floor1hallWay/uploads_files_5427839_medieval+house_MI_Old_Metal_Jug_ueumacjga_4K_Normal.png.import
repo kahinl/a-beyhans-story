@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://di5xcp16t63rw"
-path.s3tc="res://.godot/imported/uploads_files_5427839_medieval+house_MI_Old_Metal_Jug_ueumacjga_4K_Normal.png-b00df8473dc547da6fcf428d6ee4f93b.s3tc.ctex"
+path.etc2="res://.godot/imported/uploads_files_5427839_medieval+house_MI_Old_Metal_Jug_ueumacjga_4K_Normal.png-b00df8473dc547da6fcf428d6ee4f93b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/floor1hallWay/uploads_files_5427839_medieval+house_MI_Old_Metal_Jug_ueumacjga_4K_Normal.png"
-dest_files=["res://.godot/imported/uploads_files_5427839_medieval+house_MI_Old_Metal_Jug_ueumacjga_4K_Normal.png-b00df8473dc547da6fcf428d6ee4f93b.s3tc.ctex"]
+dest_files=["res://.godot/imported/uploads_files_5427839_medieval+house_MI_Old_Metal_Jug_ueumacjga_4K_Normal.png-b00df8473dc547da6fcf428d6ee4f93b.etc2.ctex"]
 
 [params]
 

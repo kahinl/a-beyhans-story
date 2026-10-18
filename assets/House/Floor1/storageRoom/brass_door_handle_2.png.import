@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4nv6nh814d2u"
-path.s3tc="res://.godot/imported/brass_door_handle_2.png-cdc892abd845ba2df290fc8d38846366.s3tc.ctex"
+path.etc2="res://.godot/imported/brass_door_handle_2.png-cdc892abd845ba2df290fc8d38846366.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/storageRoom/brass_door_handle_2.png"
-dest_files=["res://.godot/imported/brass_door_handle_2.png-cdc892abd845ba2df290fc8d38846366.s3tc.ctex"]
+dest_files=["res://.godot/imported/brass_door_handle_2.png-cdc892abd845ba2df290fc8d38846366.etc2.ctex"]
 
 [params]
 

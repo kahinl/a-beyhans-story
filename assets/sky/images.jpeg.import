@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://krx3k8mvbirm"
-path.s3tc="res://.godot/imported/images.jpeg-469c34210b823cf038c4c180c511d588.s3tc.ctex"
+path.etc2="res://.godot/imported/images.jpeg-469c34210b823cf038c4c180c511d588.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/sky/images.jpeg"
-dest_files=["res://.godot/imported/images.jpeg-469c34210b823cf038c4c180c511d588.s3tc.ctex"]
+dest_files=["res://.godot/imported/images.jpeg-469c34210b823cf038c4c180c511d588.etc2.ctex"]
 
 [params]
 

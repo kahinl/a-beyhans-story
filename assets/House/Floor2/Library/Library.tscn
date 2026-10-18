@@ -26,6 +26,7 @@
 [ext_resource type="Texture2D" uid="uid://divcyxfux12xj" path="res://assets/House/Floor2/Library/carcass_1.png" id="24_p42sk"]
 [ext_resource type="Texture2D" uid="uid://dcq4tn5suyifs" path="res://assets/House/Floor2/Library/rotten_skeleton_0.png" id="25_p42sk"]
 [ext_resource type="AudioStream" uid="uid://cvsrmg4iiq5su" path="res://assets/House/Floor2/Library/freesound_community-these-flies-76547.mp3" id="26_2ieyg"]
+[ext_resource type="Script" path="res://Scripts/inspect_item.gd" id="900_new0"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6pfie"]
 resource_name = "material_1"
@@ -1708,6 +1709,25 @@ _data = {
 &"animation_model_idle": SubResource("Animation_p24lh")
 }
 
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ph_small"]
+size = Vector3(0.3, 0.3, 0.3)
+[sub_resource type="BoxMesh" id="BoxMesh_ph_small"]
+size = Vector3(0.3, 0.3, 0.3)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ph_small"]
+albedo_color = Color(0.86, 0.72, 0.34, 1)
+emission_enabled = true
+emission = Color(0.86, 0.72, 0.34, 1)
+emission_energy_multiplier = 0.7
+[sub_resource type="BoxShape3D" id="BoxShape3D_ph_flat"]
+size = Vector3(0.55, 0.42, 0.06)
+[sub_resource type="BoxMesh" id="BoxMesh_ph_flat"]
+size = Vector3(0.55, 0.42, 0.06)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ph_flat"]
+albedo_color = Color(0.78, 0.8, 0.72, 1)
+emission_enabled = true
+emission = Color(0.78, 0.8, 0.72, 1)
+emission_energy_multiplier = 0.7
 [node name="Node3D" type="Node3D" unique_id=850942652]
 
 [node name="room" type="Node3D" parent="." unique_id=801174132]
@@ -2275,3 +2295,63 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2076402, 3.9987779, 2.8687
 stream = ExtResource("26_2ieyg")
 volume_db = -12.0
 autoplay = true
+
+
+[node name="extraSpeech" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="line" type="Label" parent="extraSpeech"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 454.0
+offset_top = 786.0
+offset_right = 1454.0
+offset_bottom = 900.0
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="medBooks" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.28, 3.53, 3.33)
+script = ExtResource("900_new0")
+flag_name = "lib_books_seen"
+speech_key = "Lib_3"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="medBooks"]
+shape = SubResource("BoxShape3D_ph_small")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="medBooks"]
+mesh = SubResource("BoxMesh_ph_small")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_small")
+
+[node name="play1" type="CanvasLayer" parent="medBooks"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="medBooks/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("18_jo2au")
+
+[node name="journal02" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.83, 4.5, 1.59)
+script = ExtResource("900_new0")
+flag_name = "journal_02_read"
+speech_key = "journal_02"
+destroy_on_pick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="journal02"]
+shape = SubResource("BoxShape3D_ph_flat")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="journal02"]
+mesh = SubResource("BoxMesh_ph_flat")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_flat")
+
+[node name="play1" type="CanvasLayer" parent="journal02"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="journal02/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("18_jo2au")

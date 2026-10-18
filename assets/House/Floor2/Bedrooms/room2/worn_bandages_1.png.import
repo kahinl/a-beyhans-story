@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://iujdmkqt2uin"
-path.s3tc="res://.godot/imported/worn_bandages_1.png-e7e90f980d697a66835942179e1a9ce6.s3tc.ctex"
+path.etc2="res://.godot/imported/worn_bandages_1.png-e7e90f980d697a66835942179e1a9ce6.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor2/Bedrooms/room2/worn_bandages_1.png"
-dest_files=["res://.godot/imported/worn_bandages_1.png-e7e90f980d697a66835942179e1a9ce6.s3tc.ctex"]
+dest_files=["res://.godot/imported/worn_bandages_1.png-e7e90f980d697a66835942179e1a9ce6.etc2.ctex"]
 
 [params]
 

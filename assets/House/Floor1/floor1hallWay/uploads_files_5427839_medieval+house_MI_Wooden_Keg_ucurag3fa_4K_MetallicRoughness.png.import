@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgptu7cvl4vyf"
-path.s3tc="res://.godot/imported/uploads_files_5427839_medieval+house_MI_Wooden_Keg_ucurag3fa_4K_MetallicRoughness.png-3cfc748cb33d21d0792fa41c34fc74dd.s3tc.ctex"
+path.etc2="res://.godot/imported/uploads_files_5427839_medieval+house_MI_Wooden_Keg_ucurag3fa_4K_MetallicRoughness.png-3cfc748cb33d21d0792fa41c34fc74dd.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor1/floor1hallWay/uploads_files_5427839_medieval+house_MI_Wooden_Keg_ucurag3fa_4K_MetallicRoughness.png"
-dest_files=["res://.godot/imported/uploads_files_5427839_medieval+house_MI_Wooden_Keg_ucurag3fa_4K_MetallicRoughness.png-3cfc748cb33d21d0792fa41c34fc74dd.s3tc.ctex"]
+dest_files=["res://.godot/imported/uploads_files_5427839_medieval+house_MI_Wooden_Keg_ucurag3fa_4K_MetallicRoughness.png-3cfc748cb33d21d0792fa41c34fc74dd.etc2.ctex"]
 
 [params]
 

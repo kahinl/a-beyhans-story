@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dt8chwyskfg6j"
-path.s3tc="res://.godot/imported/old_glass_ceilling_lamp_1.png-aabd8f177f119d974d34d129cfbce46c.s3tc.ctex"
+path.etc2="res://.godot/imported/old_glass_ceilling_lamp_1.png-aabd8f177f119d974d34d129cfbce46c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/House/Floor2/Bedrooms/room2/old_glass_ceilling_lamp_1.png"
-dest_files=["res://.godot/imported/old_glass_ceilling_lamp_1.png-aabd8f177f119d974d34d129cfbce46c.s3tc.ctex"]
+dest_files=["res://.godot/imported/old_glass_ceilling_lamp_1.png-aabd8f177f119d974d34d129cfbce46c.etc2.ctex"]
 
 [params]
 

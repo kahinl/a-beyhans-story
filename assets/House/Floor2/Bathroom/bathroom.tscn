@@ -37,6 +37,7 @@
 [ext_resource type="AudioStream" uid="uid://byqvblhkg6xrw" path="res://assets/House/Floor2/hallWay/freesound_community-old-phone-ringtone-poland-104537 (mp3cut.net) (1).mp3" id="35_8wvcb"]
 [ext_resource type="Texture2D" uid="uid://gxfycxgtqnjf" path="res://assets/House/Floor2/Bathroom/animal_skull_3d_scan_photogrammetry_0.jpg" id="36_4yq0h"]
 [ext_resource type="Texture2D" uid="uid://bh83hd06r7xit" path="res://assets/House/Floor2/Bathroom/animal_skull_3d_scan_photogrammetry_1.png" id="37_bs55a"]
+[ext_resource type="Script" path="res://Scripts/inspect_item.gd" id="900_new0"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h42e8"]
 resource_name = "wall-02"
@@ -1123,6 +1124,25 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_f2f0p")
 
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ph_flat"]
+size = Vector3(0.55, 0.42, 0.06)
+[sub_resource type="BoxMesh" id="BoxMesh_ph_flat"]
+size = Vector3(0.55, 0.42, 0.06)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ph_flat"]
+albedo_color = Color(0.78, 0.8, 0.72, 1)
+emission_enabled = true
+emission = Color(0.78, 0.8, 0.72, 1)
+emission_energy_multiplier = 0.7
+[sub_resource type="BoxShape3D" id="BoxShape3D_ph_small"]
+size = Vector3(0.3, 0.3, 0.3)
+[sub_resource type="BoxMesh" id="BoxMesh_ph_small"]
+size = Vector3(0.3, 0.3, 0.3)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ph_small"]
+albedo_color = Color(0.86, 0.72, 0.34, 1)
+emission_enabled = true
+emission = Color(0.86, 0.72, 0.34, 1)
+emission_energy_multiplier = 0.7
 [node name="Node3D" type="Node3D" unique_id=1925713416]
 
 [node name="walls" type="Node3D" parent="." unique_id=1644454747]
@@ -1727,5 +1747,89 @@ mesh = SubResource("ArrayMesh_ryfuf")
 [node name="Object_3" type="MeshInstance3D" parent="Skull/Sketchfab_model/Skull_OBJ_obj_cleaner_materialmerger_gles" unique_id=2086145729]
 mesh = SubResource("ArrayMesh_4samx")
 
+
+[node name="extraSpeech" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="line" type="Label" parent="extraSpeech"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 454.0
+offset_top = 786.0
+offset_right = 1454.0
+offset_bottom = 900.0
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="mirrorLook" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.7, 103.05, -47.89)
+script = ExtResource("900_new0")
+flag_name = "bath_mirror_seen"
+speech_key = "bath_2"
+second_flag = "symptom2_done"
+second_key = "symptom_2"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="mirrorLook"]
+shape = SubResource("BoxShape3D_ph_flat")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="mirrorLook"]
+mesh = SubResource("BoxMesh_ph_flat")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_flat")
+
+[node name="play1" type="CanvasLayer" parent="mirrorLook"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="mirrorLook/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("25_1nfto")
+
+[node name="syringeBox" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.83, 103.36, -48.79)
+script = ExtResource("900_new0")
+flag_name = "syringe_found"
+speech_key = "bath_syringe"
+destroy_on_pick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="syringeBox"]
+shape = SubResource("BoxShape3D_ph_small")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="syringeBox"]
+mesh = SubResource("BoxMesh_ph_small")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_small")
+
+[node name="play1" type="CanvasLayer" parent="syringeBox"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="syringeBox/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("25_1nfto")
+
+[node name="journal04" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.63, 103.36, -48.79)
+script = ExtResource("900_new0")
+flag_name = "journal_04_read"
+speech_key = "journal_04"
+destroy_on_pick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="journal04"]
+shape = SubResource("BoxShape3D_ph_flat")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="journal04"]
+mesh = SubResource("BoxMesh_ph_flat")
+surface_material_override/0 = SubResource("StandardMaterial3D_ph_flat")
+
+[node name="play1" type="CanvasLayer" parent="journal04"]
+layer = 3
+
+[node name="hover" type="Sprite2D" parent="journal04/play1"]
+visible = false
+position = Vector2(947, 494)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("25_1nfto")
 [connection signal="body_entered" from="bathJS" to="bathJS" method="_on_body_entered"]
 [connection signal="body_exited" from="bathJS" to="bathJS" method="_on_body_exited"]
