@@ -135,6 +135,8 @@ locale/translations=PackedStringArray("res://lang.ar.translation", "res://lang.e
 3d/physics_engine="Jolt Physics"
 
 [rendering]
+textures/vram_compression/import_s3tc_bptc=true
+textures/vram_compression/import_etc2_astc=true
 
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
